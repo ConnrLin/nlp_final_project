@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #2ecc71;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.messages {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.messages li {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 20px;
+        box-shadow: none;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
